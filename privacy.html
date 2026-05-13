@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy — Restock</title>
+<meta name="description" content="Restock's privacy policy. Restock is a 100% on-device pantry and gift tracker. No analytics, no servers, no tracking.">
+<style>
+  :root {
+    --cream: #F9F6EE;
+    --sage: #6B9376;
+    --sage-dark: #4D6D58;
+    --amber: #F2A53B;
+    --ink: #1A1916;
+    --muted: #5B5651;
+    --rule: rgba(26,25,22,0.10);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "SF Pro Text", system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  header.top {
+    padding: 28px 24px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header.top .wordmark {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+  }
+  h1 {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    margin: 24px 0 8px;
+    font-weight: 700;
+  }
+  .lede {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  p { margin: 0 0 14px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 8px;
+    font-size: 15px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { font-weight: 600; color: var(--ink); }
+  td { color: var(--ink); }
+  td code, p code, li code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 13.5px;
+    background: rgba(107,147,118,0.10);
+    padding: 1.5px 6px;
+    border-radius: 4px;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 36px 0;
+  }
+  .quote {
+    border-left: 3px solid var(--sage);
+    padding: 6px 14px;
+    background: rgba(107,147,118,0.06);
+    border-radius: 0 8px 8px 0;
+    margin: 12px 0;
+    color: var(--ink);
+  }
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 24px 48px;
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid var(--rule);
+  }
+  footer a {
+    color: var(--sage-dark);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  footer a:hover { text-decoration: underline; }
+  .updated {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 640px) {
+    h1 { font-size: 32px; }
+    table { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+  <header class="top"><a href="./" class="wordmark">Restock</a></header>
+
+  <main>
+    <h1>Privacy</h1>
+    <p class="updated">Last updated: 2026‑05‑13</p>
+
+    <h2>Our privacy promise</h2>
+    <p>Restock is a <strong>100% on‑device</strong> pantry and gift tracker. Your data lives on your iPhone (and, if you choose, in your own private iCloud account). Restock has no servers, no analytics, no crash‑reporting SDK, no ads, no third‑party SDKs, and no networking code beyond what Apple uses to sync iCloud on your behalf. Nothing you put into Restock is ever sent to us — because there is no "us" on the other end.</p>
+
+    <hr>
+
+    <h2>What data we collect</h2>
+    <p>Restock stores only the data <strong>you</strong> enter. All of it is held in SwiftData on your device, and optionally mirrored to your private iCloud database via CloudKit.</p>
+    <table>
+      <thead><tr><th>Data type</th><th>Origin</th><th>Where it lives</th><th>Who can see it</th></tr></thead>
+      <tbody>
+        <tr><td>Pantry items (name, quantity, category, notes)</td><td>You type or dictate them</td><td>SwiftData on device, optional iCloud sync</td><td>You</td></tr>
+        <tr><td>Photos attached to items</td><td>You take or choose them</td><td>SwiftData on device, optional iCloud sync</td><td>You</td></tr>
+        <tr><td>Recipes and meal plans</td><td>You create them</td><td>SwiftData on device, optional iCloud sync</td><td>You</td></tr>
+        <tr><td>Gift‑giver attribution</td><td>You pick from Contacts</td><td>SwiftData on device, optional iCloud sync</td><td>You</td></tr>
+        <tr><td>Voice transcripts</td><td>You dictate; on‑device speech recognition</td><td>SwiftData on device (as item names)</td><td>You</td></tr>
+        <tr><td>Notification preferences</td><td>You toggle them in Settings</td><td>UserDefaults on device</td><td>You</td></tr>
+      </tbody>
+    </table>
+    <p>Restock <strong>does not</strong> collect any data on its own. There is no telemetry, no usage tracking, no identifiers, no IP logs.</p>
+
+    <hr>
+
+    <h2>System permissions we ask for</h2>
+    <p>When you first use a feature that needs a system permission, iOS shows a standard prompt. You can revoke any permission at any time in Settings → Restock.</p>
+    <table>
+      <thead><tr><th>Info.plist key</th><th>iOS prompt</th><th>When</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><code>NSCameraUsageDescription</code></td><td>"Restock would like to access the Camera"</td><td>First time you tap "Take photo"</td><td>To photograph items or gifts so Vision can identify them on‑device</td></tr>
+        <tr><td><code>NSPhotoLibraryUsageDescription</code></td><td>"Restock would like to access your Photos"</td><td>First time you pick an existing photo</td><td>To attach an existing photo to an item</td></tr>
+        <tr><td><code>NSMicrophoneUsageDescription</code></td><td>"Restock would like to access the Microphone"</td><td>First time you tap voice‑add</td><td>To capture your voice for on‑device transcription</td></tr>
+        <tr><td><code>NSSpeechRecognitionUsageDescription</code></td><td>"Restock would like to use Speech Recognition"</td><td>First time you tap voice‑add</td><td>To transcribe spoken item names; audio never leaves your device</td></tr>
+        <tr><td><code>NSContactsUsageDescription</code></td><td>"Restock would like to access your Contacts"</td><td>First time you tag a gift giver</td><td>To let you pick a contact to credit for a gift</td></tr>
+      </tbody>
+    </table>
+    <p>Restock never requests location, calendar, reminders, health, motion, Bluetooth, local network, or any tracking permissions.</p>
+
+    <hr>
+
+    <h2>What we DON'T do</h2>
+    <ul>
+      <li>No analytics (no Firebase, no Mixpanel, no Amplitude, no Sentry, nothing).</li>
+      <li>No crash reporting via third parties — only Apple's built‑in opt‑in crash reports apply.</li>
+      <li>No advertising. No ad SDKs. No ad identifiers.</li>
+      <li>No tracking across apps or websites. <code>NSPrivacyTracking</code> is declared <code>false</code>.</li>
+      <li>No servers we control. Restock makes <strong>no network requests</strong>.</li>
+      <li>No third‑party SDKs. Apple frameworks only.</li>
+      <li>No accounts. No sign‑up. No email collected.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Apple Intelligence and on‑device AI</h2>
+    <p>Restock uses Apple's on‑device intelligence stack:</p>
+    <ul>
+      <li><strong>Foundation Models</strong> — Apple's on‑device LLM, used for categorization, recipe suggestions, and chat. Runs entirely on the Neural Engine. Nothing is sent to Apple's servers, OpenAI, or any other provider.</li>
+      <li><strong>Vision framework</strong> — identifies items from photos on‑device.</li>
+      <li><strong>Core ML</strong> (via Vision) — on‑device.</li>
+      <li><strong>Speech Recognition</strong> — configured with <code>requiresOnDeviceRecognition = true</code>. Audio stays on your device.</li>
+    </ul>
+    <p>Restock does <strong>not</strong> use Private Cloud Compute, ChatGPT integration, or any cloud LLM.</p>
+
+    <hr>
+
+    <h2>iCloud sync</h2>
+    <p>If you have iCloud Drive enabled and you allow Restock to use it, your pantry, recipes, photos, and gift records sync through <strong>CloudKit</strong> to your private iCloud database.</p>
+    <ul>
+      <li>The data syncs between <strong>your</strong> devices, signed in to <strong>your</strong> Apple ID.</li>
+      <li>It is stored in <strong>your</strong> iCloud account, governed by Apple's terms and Apple's encryption.</li>
+      <li>The Restock developer cannot read your iCloud data. We have no server, no admin console, no way to query it.</li>
+    </ul>
+    <p>You can disable sync any time in Settings → [your name] → iCloud → Apps Using iCloud.</p>
+
+    <hr>
+
+    <h2>Required Reason API declarations</h2>
+    <p>Apple requires apps to declare the categories of "required reason" APIs they touch. Restock's <code>PrivacyInfo.xcprivacy</code> declares:</p>
+    <table>
+      <thead><tr><th>Category</th><th>Code</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><code>NSPrivacyAccessedAPICategoryFileTimestamp</code></td><td><code>C617.1</code></td><td>SwiftData and image caches read/write file modification times within the app's sandbox</td></tr>
+        <tr><td><code>NSPrivacyAccessedAPICategoryUserDefaults</code></td><td><code>CA92.1</code></td><td>Storing notification toggles, theme, etc.</td></tr>
+        <tr><td><code>NSPrivacyAccessedAPICategoryDiskSpace</code></td><td><code>E174.1</code></td><td>Checking available space before writing photo caches</td></tr>
+        <tr><td><code>NSPrivacyAccessedAPICategorySystemBootTime</code></td><td><code>35F9.1</code></td><td>Indirectly accessed by Foundation/<code>@Observable</code> runtime machinery</td></tr>
+      </tbody>
+    </table>
+    <p>All four categories are accessed only inside Restock's own process — never for tracking, never sent off device.</p>
+
+    <hr>
+
+    <h2>Privacy nutrition label preview</h2>
+    <p>When Restock ships, the privacy section of its App Store page will read:</p>
+    <div class="quote">
+      <strong>Data Not Collected.</strong> The developer does not collect any data from this app.
+    </div>
+    <p>This matches <code>NSPrivacyCollectedDataTypes</code> being an empty array and <code>NSPrivacyTracking</code> being <code>false</code>.</p>
+
+    <hr>
+
+    <h2>Questions?</h2>
+    <p>If something on this page is unclear, or you spot something that contradicts how Restock actually behaves, please open an issue on the project's repository. Privacy is a contract — if we ever change it, this document changes first.</p>
+  </main>
+
+  <footer>
+    <a href="./">Home</a>·
+    <a href="./support.html">Support</a>·
+    <span>© <span id="year">2026</span> Restock</span>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

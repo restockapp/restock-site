@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — Restock</title>
+<meta name="description" content="Restock support. Email and GitHub Issues for bug reports, questions, and feature requests.">
+<style>
+  :root {
+    --cream: #F9F6EE;
+    --sage: #6B9376;
+    --sage-dark: #4D6D58;
+    --ink: #1A1916;
+    --muted: #5B5651;
+    --rule: rgba(26,25,22,0.10);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "SF Pro Text", system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  header.top {
+    padding: 28px 24px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header.top .wordmark {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+  }
+  h1 {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    margin: 24px 0 8px;
+    font-weight: 700;
+  }
+  .lede {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 8px 0 16px;
+  }
+  .contact {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.03);
+  }
+  .contact h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .contact p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14.5px;
+  }
+  .contact a {
+    color: var(--sage-dark);
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .contact a:hover { text-decoration: underline; }
+  details {
+    margin: 0 0 8px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  }
+  details > summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink);
+    list-style: none;
+    position: relative;
+    padding-right: 28px;
+  }
+  details > summary::after {
+    content: "+";
+    position: absolute;
+    right: 4px;
+    top: -1px;
+    font-weight: 400;
+    color: var(--muted);
+    transition: transform 120ms ease;
+  }
+  details[open] > summary::after { content: "−"; }
+  details > div, details > p {
+    margin-top: 10px;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  ul.steps {
+    margin: 6px 0 0 0;
+    padding-left: 20px;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 36px 0;
+  }
+  footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 24px 48px;
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid var(--rule);
+  }
+  footer a {
+    color: var(--sage-dark);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) {
+    h1 { font-size: 32px; }
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <header class="top"><a href="./" class="wordmark">Restock</a></header>
+
+  <main>
+    <h1>Support</h1>
+    <p class="lede">Have a question, found a bug, or want to suggest a feature? Here's how to reach us.</p>
+
+    <div class="contact-grid">
+      <div class="contact">
+        <h3>📧 Email</h3>
+        <p><a href="mailto:__SUPPORT_EMAIL__">__SUPPORT_EMAIL__</a></p>
+        <p style="margin-top:8px;">Best for private questions or anything you'd rather not post publicly.</p>
+      </div>
+      <div class="contact">
+        <h3>🐛 GitHub Issues</h3>
+        <p><a href="__GITHUB_ISSUES_URL__">github.com/.../issues</a></p>
+        <p style="margin-top:8px;">Best for bug reports, feature requests, and public discussion.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Frequently asked</h2>
+
+    <details>
+      <summary>Why doesn't AI photo recognition work on my iPhone?</summary>
+      <p>Restock's AI features run through <strong>Apple Intelligence</strong>, which requires an iPhone 15 Pro / 15 Pro Max or any iPhone 16 / 17 series device, plus the Apple Intelligence toggle enabled.</p>
+      <ul class="steps">
+        <li>Open Settings → Apple Intelligence &amp; Siri → turn it on.</li>
+        <li>Wait for the model download to finish (usually 5–30 min on first run).</li>
+        <li>Re-open Restock — the camera identification and "What can I cook?" features will light up automatically.</li>
+      </ul>
+      <p>On older devices, Restock still works perfectly as a manual pantry tracker — only the AI suggestions are unavailable.</p>
+    </details>
+
+    <details>
+      <summary>Does my pantry data go to a server?</summary>
+      <p>No. Restock has no servers and makes no network requests. Every photo, every voice transcript, every AI suggestion runs on the Neural Engine on your device.</p>
+      <p>If you've enabled iCloud Drive and chosen to let Restock use iCloud sync, your data syncs <em>through Apple's CloudKit</em> to <em>your</em> private iCloud account — it never touches our infrastructure (there is none). Read the full <a href="./privacy.html">privacy policy</a> for details.</p>
+    </details>
+
+    <details>
+      <summary>Voice Add isn't transcribing my voice. What's wrong?</summary>
+      <p>A few things to check:</p>
+      <ul class="steps">
+        <li>Settings → Restock → Microphone — make sure it's enabled.</li>
+        <li>Settings → Restock → Speech Recognition — same.</li>
+        <li>Settings → General → Keyboard → Enable Dictation — must be on. (Restock uses the same on-device speech stack.)</li>
+        <li>Restock is configured to use <strong>on-device recognition only</strong>, so a network connection isn't required, but the speech models do need to be downloaded once. Try a longer phrase to give the recognizer something to work with.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>How do I track flowers, cake, or a bottle of wine I received as a gift?</summary>
+      <p>Long-press the <strong>+</strong> button on the Pantry tab and choose <strong>Add gift</strong>. Take a photo, and the AI will:</p>
+      <ul class="steps">
+        <li>Identify the type (flowers / cake / bottle / sweets / hamper).</li>
+        <li>Suggest a vase life or shelf life.</li>
+        <li>Generate care tips (e.g. "Trim stems every 3 days").</li>
+      </ul>
+      <p>You can attribute the gift to a contact (Contacts permission required), take daily photos to build a timeline, and tap Share to compose a beautiful card. Notifications fire 2 days before expiry and on the day.</p>
+    </details>
+
+    <details>
+      <summary>Can I export my data?</summary>
+      <p>Your data lives in SwiftData inside the app sandbox, and optionally in your private iCloud database. Restock does not currently include a one-click JSON export — if that's important to you, please request it via GitHub Issues and we'll prioritize.</p>
+    </details>
+
+    <details>
+      <summary>Will Restock work on iPad?</summary>
+      <p>Yes — Restock is a Universal app with an iPad-adaptive layout. On iPad you get a sidebar split view with Pantry / Shopping / Meals / Settings on the left and the active tab's detail on the right.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete all my Restock data?</summary>
+      <p>Settings tab → Data → <strong>Delete all data</strong>. You'll be asked to confirm. This permanently removes every pantry item, recipe, gift, photo, and history record on the device. If you have iCloud sync enabled, it also removes them from your iCloud database (and from every other device signed into your Apple ID, after sync).</p>
+      <p>To remove the app entirely, simply uninstall — iOS purges all on-device storage automatically.</p>
+    </details>
+  </main>
+
+  <footer>
+    <a href="./">Home</a>·
+    <a href="./privacy.html">Privacy</a>·
+    <span>© <span id="year">2026</span> Restock</span>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
