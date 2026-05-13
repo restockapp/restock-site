@@ -56,34 +56,46 @@
     margin: 40px 0 12px;
     letter-spacing: -0.01em;
   }
-  .contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin: 8px 0 16px;
-  }
-  .contact {
+  .contact-single {
     background: #fff;
     border-radius: 14px;
-    padding: 20px;
+    padding: 24px 24px 22px;
     box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.03);
+    margin: 8px 0 16px;
   }
-  .contact h3 {
-    margin: 0 0 6px;
-    font-size: 16px;
+  .contact-single h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
     font-weight: 600;
   }
-  .contact p {
-    margin: 0;
+  .contact-single p {
+    margin: 0 0 10px;
+    color: var(--ink);
+    font-size: 15.5px;
+  }
+  .contact-single p.muted {
     color: var(--muted);
     font-size: 14.5px;
+    margin-top: 14px;
   }
-  .contact a {
+  .contact-single a {
     color: var(--sage-dark);
     text-decoration: none;
     word-break: break-all;
   }
-  .contact a:hover { text-decoration: underline; }
+  .contact-single a:hover { text-decoration: underline; }
+  .cta {
+    display: inline-block;
+    background: var(--sage);
+    color: #fff !important;
+    text-decoration: none !important;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 120ms ease;
+  }
+  .cta:hover { background: var(--sage-dark); }
   details {
     margin: 0 0 8px;
     background: #fff;
@@ -140,7 +152,6 @@
   footer a:hover { text-decoration: underline; }
   @media (max-width: 640px) {
     h1 { font-size: 32px; }
-    .contact-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -151,17 +162,17 @@
     <h1>Support</h1>
     <p class="lede">Have a question, found a bug, or want to suggest a feature? Here's how to reach us.</p>
 
-    <div class="contact-grid">
-      <div class="contact">
-        <h3>📧 Email</h3>
-        <p><a href="mailto:__SUPPORT_EMAIL__">__SUPPORT_EMAIL__</a></p>
-        <p style="margin-top:8px;">Best for private questions or anything you'd rather not post publicly.</p>
-      </div>
-      <div class="contact">
-        <h3>🐛 GitHub Issues</h3>
-        <p><a href="__GITHUB_ISSUES_URL__">github.com/.../issues</a></p>
-        <p style="margin-top:8px;">Best for bug reports, feature requests, and public discussion.</p>
-      </div>
+    <div class="contact-single">
+      <h3>🐛 Open a GitHub issue</h3>
+      <p>Restock is a small indie project, and we handle all support — bug reports, questions, and feature requests — through public GitHub issues. Filing one takes about a minute:</p>
+      <ol class="steps">
+        <li>Go to <a href="https://github.com/restockapp/restock-site/issues/new">https://github.com/restockapp/restock-site/issues/new</a> (you'll need a free GitHub account).</li>
+        <li>Give it a short title describing what's happening.</li>
+        <li>In the body, tell us your iPhone model, your iOS version, and what you were trying to do when the problem appeared. A screenshot helps if you have one.</li>
+        <li>Click <strong>Submit new issue</strong>. We'll respond on the same thread within a few days.</li>
+      </ol>
+      <p class="muted">Don't have a GitHub account? Signing up is free at <a href="https://github.com/signup">github.com/signup</a> — it takes 30 seconds and works for any future indie app support.</p>
+      <p style="margin-top:14px;"><a class="cta" href="https://github.com/restockapp/restock-site/issues/new">Open a new issue →</a></p>
     </div>
 
     <hr>
